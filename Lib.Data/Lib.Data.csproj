@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E09E574A-C656-45E7-84B0-F9D3B45F037A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lib.Data</RootNamespace>
+    <AssemblyName>Lib.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Nonshipping>true</Nonshipping>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datastore\DataRepositoryFactory.cs" />
+    <Compile Include="Datastore\DataRepositoryStore.cs" />
+    <Compile Include="Datastore\EntityObjectExtension.cs" />
+    <Compile Include="Datastore\IDataRepositoryStore.cs" />
+    <Compile Include="Encrypt\Encryptor.cs" />
+    <Compile Include="EntityModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="GenericRepository\Common.cs" />
+    <Compile Include="GenericRepository\Dynamic.cs" />
+    <Compile Include="GenericRepository\EFGenericRepository.cs" />
+    <Compile Include="GenericRepository\IRepository.cs" />
+    <Compile Include="GenericRepository\IRepositoryFactory.cs" />
+    <Compile Include="GenericRepository\RepositoryBase.cs" />
+    <Compile Include="Managed\RFStatisticTemp.cs" />
+    <Compile Include="Managed\RFStatistic.cs" />
+    <Compile Include="Managed\RFSpotContest.cs" />
+    <Compile Include="Managed\RFSpotContestTemp.cs" />
+    <Compile Include="Managed\RFWHATSAPP.cs" />
+    <Compile Include="Managed\BungaPinjaman.cs" />
+    <Compile Include="Managed\HidePAPRK.cs" />
+    <Compile Include="Managed\RFUpcomingEvent.cs" />
+    <Compile Include="Managed\RFUpcomingEventTemp.cs" />
+    <Compile Include="Managed\WordingPRK.cs" />
+    <Compile Include="Managed\MaxLoanSetting.cs" />
+    <Compile Include="Managed\BankAccount.cs" />
+    <Compile Include="Managed\HidePAPRKTemp.cs" />
+    <Compile Include="Managed\WordingPRKTemp.cs" />
+    <Compile Include="Managed\PhotoGallery.cs" />
+    <Compile Include="Managed\PhotoGalleryList.cs" />
+    <Compile Include="Managed\PhotoGalleryListTemp.cs" />
+    <Compile Include="Managed\MaxLoanSettingTemp.cs" />
+    <Compile Include="Managed\PhotoGalleryTemp.cs" />
+    <Compile Include="Managed\SPGetAgentCode.cs" />
+    <Compile Include="Managed\JenisDokumenJaminan.cs" />
+    <Compile Include="Managed\LoanApplicationReport.cs" />
+    <Compile Include="Managed\LoanRequestReport.cs" />
+    <Compile Include="Managed\LoanRequest.cs" />
+    <Compile Include="Managed\Article.cs" />
+    <Compile Include="Managed\ArticleTemp.cs" />
+    <Compile Include="Managed\AuditTrail.cs" />
+    <Compile Include="Managed\Address.cs" />
+    <Compile Include="Managed\Agent.cs" />
+    <Compile Include="Managed\CMSRoleTemp.cs" />
+    <Compile Include="Managed\CMSAdminTemp.cs" />
+    <Compile Include="Managed\InfoContentTemp.cs" />
+    <Compile Include="Managed\InfoContent.cs" />
+    <Compile Include="Managed\ValidasiKabupatenTemp.cs" />
+    <Compile Include="Managed\MenuWebTemp.cs" />
+    <Compile Include="Managed\ImagesContentGalleryTemp.cs" />
+    <Compile Include="Managed\ContentWebTemp.cs" />
+    <Compile Include="Managed\CategoryTemp.cs" />
+    <Compile Include="Managed\BannerTemp.cs" />
+    <Compile Include="Managed\OTP.cs" />
+    <Compile Include="Managed\Property.cs" />
+    <Compile Include="Managed\Category.cs" />
+    <Compile Include="Managed\PersonalDocument.cs" />
+    <Compile Include="Managed\PersonalData.cs" />
+    <Compile Include="Managed\LoanApplication.cs" />
+    <Compile Include="Managed\ContentWeb.cs" />
+    <Compile Include="Managed\MenuWeb.cs" />
+    <Compile Include="Managed\ImagesContentGallery.cs" />
+    <Compile Include="Managed\TestimoniTemp.cs" />
+    <Compile Include="Managed\Testimoni.cs" />
+    <Compile Include="Managed\CMSAdmin.cs" />
+    <Compile Include="Managed\Banner.cs" />
+    <Compile Include="Managed\CMSMenu.cs" />
+    <Compile Include="Managed\CMSRole.cs" />
+    <Compile Include="Managed\EF.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Managed\EFResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Managed\ValidasiKabupaten.cs" />
+    <Compile Include="Managed\VideoGallery.cs" />
+    <Compile Include="Managed\VideoGalleryList.cs" />
+    <Compile Include="Managed\VideoGalleryListTemp.cs" />
+    <Compile Include="Managed\VideoGalleryTemp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="EntityModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EntityModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EntityModel.edmx.diagram">
+      <DependentUpon>EntityModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

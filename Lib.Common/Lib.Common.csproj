@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A173308-4142-4D89-BC34-692652D3D245}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lib.Common</RootNamespace>
+    <AssemblyName>Lib.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Nonshipping>true</Nonshipping>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=4.5.2.1, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.5.2.1\lib\net40\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.1.0.145, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.1.1.0\lib\net45\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI, Version=2.4.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.4.1\lib\net45\NPOI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.4.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.4.1\lib\net45\NPOI.OOXML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.4.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.4.1\lib\net45\NPOI.OpenXml4Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.4.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.4.1\lib\net45\NPOI.OpenXmlFormats.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APIModel\RFSpotContestResponse.cs" />
+    <Compile Include="APIModel\RFUpcomingEventResponse.cs" />
+    <Compile Include="APIModel\RFStatisticResponse.cs" />
+    <Compile Include="APIModel\RFWhatsappResponse.cs" />
+    <Compile Include="APIModel\BungaPinjamanModel.cs" />
+    <Compile Include="APIModel\AgentLogin.cs" />
+    <Compile Include="APIModel\AgentMemberModel.cs" />
+    <Compile Include="APIModel\AgentModel.cs" />
+    <Compile Include="APIModel\AgentSubmitRequest.cs" />
+    <Compile Include="APIModel\ArticleResponse.cs" />
+    <Compile Include="APIModel\BankAccountResponse.cs" />
+    <Compile Include="APIModel\CodeDetailModel.cs" />
+    <Compile Include="APIModel\DocumentSyncData.cs" />
+    <Compile Include="APIModel\GalleryPhotoResponse.cs" />
+    <Compile Include="APIModel\GalleryPhotosResponse.cs" />
+    <Compile Include="APIModel\GalleryVideoResponse.cs" />
+    <Compile Include="APIModel\GalleryVideosResponse.cs" />
+    <Compile Include="APIModel\GetTokenRequest.cs" />
+    <Compile Include="APIModel\InfoContentModel.cs" />
+    <Compile Include="APIModel\JenisDokumenJaminan.cs" />
+    <Compile Include="APIModel\PropertyModel.cs" />
+    <Compile Include="APIModel\BannerResponse.cs" />
+    <Compile Include="APIModel\ContentWebResponse.cs" />
+    <Compile Include="APIModel\CustomerDataResponse.cs" />
+    <Compile Include="APIModel\CustomerDataRequest.cs" />
+    <Compile Include="APIModel\AddressModel.cs" />
+    <Compile Include="APIModel\FotoBinary.cs" />
+    <Compile Include="APIModel\LoanApplication.cs" />
+    <Compile Include="APIModel\LOSInquiry.cs" />
+    <Compile Include="APIModel\LOSSendDataRequest.cs" />
+    <Compile Include="APIModel\LOSSendDataResponse.cs" />
+    <Compile Include="APIModel\MainPageResponse.cs" />
+    <Compile Include="APIModel\MenuResponse.cs" />
+    <Compile Include="APIModel\PersonalData.cs" />
+    <Compile Include="APIModel\PersonalDocument.cs" />
+    <Compile Include="APIModel\ProbizTokenResponse.cs" />
+    <Compile Include="APIModel\RangeLimit.cs" />
+    <Compile Include="APIModel\RangeLimitAPIRequest.cs" />
+    <Compile Include="APIModel\RangeLimitRequest.cs" />
+    <Compile Include="APIModel\MaxLoanData.cs" />
+    <Compile Include="APIModel\RangeLimitResponse.cs" />
+    <Compile Include="APIModel\ReqAppStatus.cs" />
+    <Compile Include="APIModel\ResponseStatus.cs" />
+    <Compile Include="APIModel\Status.cs" />
+    <Compile Include="APIModel\CertTypeModel.cs" />
+    <Compile Include="APIModel\StatusAppRequest.cs" />
+    <Compile Include="CaptchaHelper.cs" />
+    <Compile Include="Constant\ImagesConstant.cs" />
+    <Compile Include="DataModel\AgentData.cs" />
+    <Compile Include="DataModel\ApprovalModels.cs" />
+    <Compile Include="DataModel\RFStatisticModels.cs" />
+    <Compile Include="DataModel\RFUpcomingEventModels.cs" />
+    <Compile Include="DataModel\RFWhatsappModel.cs" />
+    <Compile Include="DataModel\ArticleModel.cs" />
+    <Compile Include="DataModel\CaptchaResponse.cs" />
+    <Compile Include="CookieHelper.cs" />
+    <Compile Include="DataModel\ContentGallery.cs" />
+    <Compile Include="DataModel\ContentMainPage.cs" />
+    <Compile Include="DataModel\GalleryPhotoModel.cs" />
+    <Compile Include="DataModel\GalleryVideoModel.cs" />
+    <Compile Include="DataModel\TokenModel.cs" />
+    <Compile Include="EmailForPublicHelper.cs" />
+    <Compile Include="Excel.cs" />
+    <Compile Include="ExcelNPOI.cs" />
+    <Compile Include="ExcerptHelper.cs" />
+    <Compile Include="ExtendedListItem.cs" />
+    <Compile Include="ImagesCompress.cs" />
+    <Compile Include="IpAddressHelper.cs" />
+    <Compile Include="DateTimeHelper.cs" />
+    <Compile Include="EmailHelper.cs" />
+    <Compile Include="Encrypt\Encryptor.cs" />
+    <Compile Include="Encrypt\MD5Hash.cs" />
+    <Compile Include="DataModel\AdminModels.cs" />
+    <Compile Include="DataModel\BannerModels.cs" />
+    <Compile Include="DataModel\CategoryModel.cs" />
+    <Compile Include="DataModel\ContentWebModel.cs" />
+    <Compile Include="DataModel\ImagesGalleryModel.cs" />
+    <Compile Include="DataModel\MemberModels.cs" />
+    <Compile Include="DataModel\MenuWebModel.cs" />
+    <Compile Include="DataModel\TestimoniModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RestClient.cs" />
+    <Compile Include="DataModel\RFSpotContestModels.cs" />
+    <Compile Include="SiteSetting.cs" />
+    <Compile Include="SMSSenderHelper.cs" />
+    <Compile Include="ValidateFileAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lib.Data\Lib.Data.csproj">
+      <Project>{E09E574A-C656-45E7-84B0-F9D3B45F037A}</Project>
+      <Name>Lib.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

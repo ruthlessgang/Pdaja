@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="51df4489936b4954a731957e46f4521f" Name="Diagram1" ZoomLevel="85" >
+        <EntityTypeShape EntityType="SALTModel.AuditTrail" Width="1.5" PointX="2.75" PointY="6.75" />
+        <EntityTypeShape EntityType="SALTModel.CMSMenu" Width="1.5" PointX="0.75" PointY="1.375" />
+        <EntityTypeShape EntityType="SALTModel.PersonalDocument" Width="1.5" PointX="15.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SALTModel.Address" Width="1.5" PointX="0.75" PointY="15.75" />
+        <EntityTypeShape EntityType="SALTModel.OTP" Width="1.5" PointX="2.75" PointY="15.75" />
+        <EntityTypeShape EntityType="SALTModel.Testimoni" Width="1.5" PointX="15.75" PointY="4.75" />
+        <EntityTypeShape EntityType="SALTModel.TestimoniTemp" Width="1.5" PointX="4.75" PointY="15.75" />
+        <EntityTypeShape EntityType="SALTModel.Banner" Width="1.5" PointX="6.75" PointY="15.75" />
+        <EntityTypeShape EntityType="SALTModel.BannerTemp" Width="1.5" PointX="15.75" PointY="9.75" />
+        <EntityTypeShape EntityType="SALTModel.CategoryTemp" Width="1.5" PointX="15.75" PointY="15.75" />
+        <EntityTypeShape EntityType="SALTModel.ContentWeb" Width="1.5" PointX="13" PointY="15" />
+        <EntityTypeShape EntityType="SALTModel.ContentWebTemp" Width="1.5" PointX="17.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SALTModel.ImagesContentGallery" Width="1.5" PointX="17.75" PointY="6.75" />
+        <EntityTypeShape EntityType="SALTModel.ImagesContentGalleryTemp" Width="1.5" PointX="17.75" PointY="11.75" />
+        <EntityTypeShape EntityType="SALTModel.MenuWebTemp" Width="1.5" PointX="19.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SALTModel.ValidasiKabupaten" Width="1.5" PointX="19.75" PointY="5.75" />
+        <EntityTypeShape EntityType="SALTModel.ValidasiKabupatenTemp" Width="1.5" PointX="19.75" PointY="9.75" />
+        <EntityTypeShape EntityType="SALTModel.CMSAdmin" Width="1.5" PointX="0.75" PointY="6.25" />
+        <EntityTypeShape EntityType="SALTModel.CMSAdminTemp" Width="1.5" PointX="19.75" PointY="13.75" />
+        <EntityTypeShape EntityType="SALTModel.CMSRole" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="SALTModel.CMSRoleTemp" Width="1.5" PointX="19.75" PointY="18.75" />
+        <AssociationConnector Association="SALTModel.FK_CMSRole_CMSAdmin" />
+        <AssociationConnector Association="SALTModel.FK_CMSRole_CMSMenu" />
+        <EntityTypeShape EntityType="SALTModel.InfoContent" Width="1.5" PointX="0.75" PointY="20.75" />
+        <EntityTypeShape EntityType="SALTModel.InfoContentTemp" Width="1.5" PointX="2.75" PointY="20.75" />
+        <EntityTypeShape EntityType="SALTModel.PersonalData" Width="1.5" PointX="13" PointY="3.25" />
+        <EntityTypeShape EntityType="SALTModel.Property" Width="1.5" PointX="8.75" PointY="20.75" />
+        <EntityTypeShape EntityType="SALTModel.JenisDokumenJaminan" Width="1.5" PointX="10.75" PointY="20.75" />
+        <EntityTypeShape EntityType="SALTModel.BankAccount" Width="1.5" PointX="14.75" PointY="20.75" />
+        <EntityTypeShape EntityType="SALTModel.PhotoGalleryList" Width="1.5" PointX="3" PointY="11.125" />
+        <EntityTypeShape EntityType="SALTModel.PhotoGalleryListTemp" Width="1.5" PointX="8" PointY="6.375" />
+        <EntityTypeShape EntityType="SALTModel.VideoGallery" Width="1.5" PointX="5.75" PointY="11" />
+        <EntityTypeShape EntityType="SALTModel.VideoGalleryList" Width="1.5" PointX="8" PointY="11.125" />
+        <EntityTypeShape EntityType="SALTModel.VideoGalleryListTemp" Width="1.5" PointX="8" PointY="1.375" />
+        <AssociationConnector Association="SALTModel.FK_VideoGalleryList_VideoGallery" />
+        <EntityTypeShape EntityType="SALTModel.PhotoGallery" Width="1.5" PointX="0.75" PointY="11" />
+        <AssociationConnector Association="SALTModel.FK_PhotoGalleryList_PhotoGallery" />
+        <EntityTypeShape EntityType="SALTModel.Article" Width="1.5" PointX="21.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SALTModel.ArticleTemp" Width="1.5" PointX="4.75" PointY="21.75" />
+        <EntityTypeShape EntityType="SALTModel.Agent" Width="1.5" PointX="21.75" PointY="5.75" />
+        <EntityTypeShape EntityType="SALTModel.PhotoGalleryTemp" Width="1.5" PointX="5.75" PointY="6" />
+        <EntityTypeShape EntityType="SALTModel.VideoGalleryTemp" Width="1.5" PointX="5.75" PointY="1" />
+        <AssociationConnector Association="SALTModel.FK_PhotoGalleryListTemp_PhotoGalleryTemp" />
+        <AssociationConnector Association="SALTModel.FK_VideoGalleryListTemp_VideoGalleryTemp" />
+        <EntityTypeShape EntityType="SALTModel.MaxLoanSetting" Width="1.5" PointX="21.75" PointY="16.75" />
+        <EntityTypeShape EntityType="SALTModel.MaxLoanSettingTemp" Width="1.5" PointX="16.75" PointY="21.75" />
+        <EntityTypeShape EntityType="SALTModel.WordingPRK" Width="1.5" PointX="21.75" PointY="20.75" />
+        <EntityTypeShape EntityType="SALTModel.WordingPRKTemp" Width="1.5" PointX="23.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SALTModel.LoanApplication" Width="1.5" PointX="10.75" PointY="1" />
+        <EntityTypeShape EntityType="SALTModel.LoanRequest" Width="1.5" PointX="22.375" PointY="9.75" />
+        <AssociationConnector Association="SALTModel.FK_PersonalData_LoanApplication" />
+        <EntityTypeShape EntityType="SALTModel.BungaPinjaman" Width="1.5" PointX="24.375" PointY="4.75" />
+        <EntityTypeShape EntityType="SALTModel.HidePAPRK" Width="1.5" PointX="7.375" PointY="24.75" />
+        <EntityTypeShape EntityType="SALTModel.HidePAPRKTemp" Width="1.5" PointX="9.5" PointY="24.75" />
+        <EntityTypeShape EntityType="SALTModel.Category" Width="1.5" PointX="10.75" PointY="15.5" />
+        <AssociationConnector Association="SALTModel.FK_ContentWeb_Category" />
+        <EntityTypeShape EntityType="SALTModel.RFWHATSAPP" Width="1.5" PointX="10.375" PointY="9.75" />
+        <EntityTypeShape EntityType="SALTModel.MenuWeb" Width="1.5" PointX="12.375" PointY="9.75" />
+        <EntityTypeShape EntityType="SALTModel.RFSpotContest" Width="1.5" PointX="24.375" PointY="13.75" />
+        <EntityTypeShape EntityType="SALTModel.RFSpotContestTemp" Width="1.5" PointX="24.375" PointY="19.75" />
+        <EntityTypeShape EntityType="SALTModel.RFUpcomingEvent" Width="1.5" PointX="19.375" PointY="24.75" />
+        <EntityTypeShape EntityType="SALTModel.RFUpcomingEventTemp" Width="1.5" PointX="21.375" PointY="24.75" />
+        <EntityTypeShape EntityType="SALTModel.RFStatistic" Width="1.5" PointX="24.375" PointY="9.75" />
+        <EntityTypeShape EntityType="SALTModel.RFStatisticTemp" Width="1.5" PointX="12.375" PointY="24.75" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
